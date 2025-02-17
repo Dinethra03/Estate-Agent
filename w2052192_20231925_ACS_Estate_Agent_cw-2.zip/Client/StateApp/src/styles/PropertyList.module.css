@@ -1,0 +1,12 @@
+.propertyList {
+    display: grid; /*Use CSS Grid layout for arranging the property list*/
+    /*Create columns that automatically fit into the container, with a minimum width of 250px and distributing  remaining space equally.*/
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px; /*Add 20px spacing between grid items*/
+  }
+  
+  @media (max-width: 768px) { /*Apply styles for screen smaller that or equal to 768px */
+    .propertyList {
+      grid-template-columns: 1fr; /*Stack the grid items into a single column for smaller screens*/
+    }
+  }

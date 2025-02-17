@@ -1,0 +1,31 @@
+
+.App {
+  max-width: 1200px; /*Limits the application width for better readability on large screens*/
+  margin: 0 auto;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 10px; /*Reduces paddind for smaller screens to maximize usable space*/
+  }
+}
+
+.favorites-list {
+  position: fixed; /*Fix the favorites list to the top right corner of the screen*/
+  right: 20px;
+  top: 20px;
+  width: 250px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1024px) {
+  .favorites-list {
+    position: static; /*Removes the fixed position on medium-sized screens*/
+    width: 100%;
+    margin-top: 20px;
+  }
+}

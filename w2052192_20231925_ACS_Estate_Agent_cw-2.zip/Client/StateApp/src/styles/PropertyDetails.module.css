@@ -1,0 +1,43 @@
+
+.propertyDetails {
+    background-color: #fff; /*Set a white background for the property details section*/
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .propertyInfo {
+    margin-bottom: 20px;  /*Add 20px margin below the property info section for spacing*/
+  }
+  
+  .price {
+    font-size: 24px; /*Increase the font size of the price text for emhasis*/
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+  
+  .favoriteButton {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer; /*Change the cursor to a ponter to indicate clickability*/
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .favorited {
+    background-color: #e74c3c; /*Use a red color for the button when the property is favorited*/
+  }
+  
+  .floorPlan {
+    max-width: 100%; /*Ensure the floor plan image doesn't exceed the container width*/
+    height: auto; 
+  }
+  
+  @media (max-width: 768px) {
+    .propertyDetails {
+      padding: 15px; /*Reduce padding for smaller screens to save space*/
+    }
+  }

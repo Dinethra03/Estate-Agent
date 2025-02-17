@@ -1,0 +1,72 @@
+:root {
+  /* Define custome properties (CSS variables) for global colors */
+    --primary-color: #4a90e2;
+    --secondary-color: #f5a623;
+    --background-color: #f0f0f0;
+    --text-color: #333;
+  }
+  
+  body {
+    /* Set body font and overall styling */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    /*Define the container with a max-width and padding */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /*Media query for screens with a width of 768px or less */
+  @media (max-width: 768px) {
+    @media (max-width: 768px) {
+    .container {
+      padding: 0 10px;
+    }
+  }
+}
+  
+  button {
+    /*Style the button element */
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  /*Change button background colour when hoverd */
+  button:hover {
+    background-color: darken(var(--primary-color), 10%);
+  }
+  
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /*Style for visually hidden elements, typically for screen readers*/
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  
+ 

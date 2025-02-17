@@ -1,0 +1,31 @@
+.layout {
+    display: flex;
+    flex-direction: column; /*Stack the header,main and footer vertically*/
+    min-height: 100vh;  /*Ensure the layout spans the full viewport height*/
+  }
+  
+  .header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .main {
+    flex: 1; /* Allow the main content to take up remaining space*/
+    padding: 20px;
+    max-width: 1200px; /*Constrain the content width for readability on large screens*/
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .main {
+      padding: 15px; /*Reduce padding for smaller screens to maximize space*/
+    }
+  }

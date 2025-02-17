@@ -1,0 +1,70 @@
+.favoritesList {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    width: 300px;
+    max-height: 80vh; /*Limit the height to 80% of the viewport height for better usability*/
+    overflow-y: auto; /*Allow vertical scrolling if the content exceeds the maximum height*/
+  }
+  
+  .favoriteItem {
+    display: flex; /*Use flexbox to align the image and info horizontally*/
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee; /*Add a light border below each item for separation*/
+    padding-bottom: 15px;
+  }
+  
+  .favoriteImage {
+    width: 80px;
+    height: 80px;
+    object-fit: cover; /*Ensure the image maintains its aspect ratio while filling the space*/
+    margin-right: 15px; /*Add spacing to the right of the image for seperation*/
+  }
+  
+  .favoriteInfo {
+    flex: 1; /*Allow the info section to take up remaining space*/
+  }
+  
+  .favoriteInfo h4 {
+    margin: 0 0 5px; /*Remove top margin, add 5px bottom margin for spacing*/
+    font-size: 16px; /*Set a readable font size for the title*/
+  }
+  
+  .favoriteInfo p {
+    margin: 0 0 5px; 
+    font-size: 14px;
+  }
+  
+  .favoriteInfo button {
+    background-color: #e74c3c;
+    color: white;
+    border: none; /*Remove any default border*/
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer; /*Change the cursor to a pointer to indicate clickability*/
+    font-size: 12px;
+  }
+  
+  .clearButton {
+    background-color: #34495e;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer; /*Change the cursor to a pointer to indicate clickability*/
+    font-size: 14px;
+    width: 100%;
+    margin-top: 15px;
+  }
+  
+  @media (max-width: 1024px) {
+    .favoritesList {
+      position: static; /*Reset the position for smaller screens*/
+      width: 100%; 
+      margin-top: 20px;
+    }
+  }

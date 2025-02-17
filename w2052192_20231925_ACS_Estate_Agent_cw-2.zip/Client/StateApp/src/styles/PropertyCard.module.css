@@ -1,0 +1,61 @@
+.propertyCard {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /*Ensure content doesn't overflow the card's borders*/
+    transition: transform 0.3s ease;
+  }
+  
+  /*Slightly raise the card when hovered for a dymanic effect */
+  .propertyCard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .propertyImage {
+    width: 100%; /*Make the image span the full width of the card*/
+    height: 200px;
+    object-fit: cover; /*Ensure the image covers the area without distortion*/
+  }
+  
+  .propertyInfo {
+    padding: 15px; 
+  }
+  
+  .propertyInfo h3 {
+    margin: 0 0 10px; /*Remove to margin, add 10px bottom margin for spacing below*/
+    font-size: 18px; /*Set font size for the property title*/
+  }
+  
+  .price {
+    font-size: 20px; /*Set the font size for the price*/
+    font-weight: bold;
+    color: var(--primary-color); /*Use the primary color for the price text*/
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-between; /*Distribute items evenly with space between*/
+    margin-top: 15px;
+  }
+  
+  .viewButton,
+  .favoriteButton {
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none; /*Remove underline from button links*/
+    font-size: 14px;
+  }
+  
+  .viewButton {
+    background-color: var(--primary-color); 
+    color: white; /*Make the button text white*/
+  }
+  
+  .favoriteButton {
+    background-color: var(--secondary-color);
+    color: white;
+  }
+  
+  .favorited {
+    background-color: #e74c3c;
+  }

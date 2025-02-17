@@ -1,0 +1,60 @@
+.searchForm {
+  /*Style the search from container */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .formGroup {
+    /*Style for each form group (label and input/field */
+    margin-bottom: 15px;
+  }
+  
+  .formGroup label {
+    /*Style the lable within the form group */
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  /*Style the input and select elements within the form group */
+  .formGroup input,
+  .formGroup select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /*Style the search button*/
+  .searchButton {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /*Change button background on hover*/
+  .searchButton:hover {
+    background-color: darken(var(--primary-color), 10%);
+  }
+  
+  @media (min-width: 768px) {
+    /*Media query for screnns with minimum width of 768px (tablet and lager screnns) */
+    .searchForm form {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+
+  /*Style the search button on lager screens*/
+    .searchButton {
+      /*Make the search button span across both colums*/
+      grid-column: span 2;
+    }
+  }
